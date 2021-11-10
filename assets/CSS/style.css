@@ -1,137 +1,179 @@
-*, *::before, *::after{
-    margin: 0;
+/* --------------------------- Google font  ----------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+/* --------------------------- CSS Reset -------------------------- */
+* {
     padding: 0;
+    margin: 0;
     outline: 0;
-    box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
 }
 
-body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #f4f4f4;
+html {
+    font-size: 62.5%;
 }
 
-.menu{
-    background-color: thistle;
-    height: 75px;
+body {
+    min-height: 200vh;
+    background: #020228;
+}
+
+/* ------------------------- Menu Header -------------------------- */
+.menu {
+    height: 7.5rem;
     width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #fff;
     box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.6s;
+    z-index: 10000;
 }
 
-.logo{
-    color: brown;
-    font-size: 35px;
-    padding: 0 80px;
-    font-weight: bold;
+.menu.sticky {
+    background: #441faaf5;
 }
 
-.menu_items{
+/* ************************* LOGO ************************* */
+.logo {
+    height: 7.3rem;
+    padding: 0 8rem;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.logo img {
+    height: 100%;
+}
+
+/*  ************************* items ************************* */
+.menu_items {
     display: flex;
-    margin-right: 30px;
+    margin-right: 3rem;
+    position: relative;
 }
 
 .menu_items li {
     border-radius: 3px;
-    margin: 0 5px;
+    margin: 0 .5rem;
+    position: relative;
+    border-right: 1px solid #FFF;
 }
 
-.menu_items li a{
-    padding: 7px 13px;
-    font-size: 18px;
+.menu_items li a,
+.menu_items li a i {
+    padding: .7rem 1.3rem;
     display: block;
     text-transform: uppercase;
-    color: blue;
+    position: relative;
+    font-size: 2rem;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transform: 0.6s;
 }
 
-.menu_items li a i{
-    border: none;
-}
-
-.menu_items a:hover, li.active{
-    background-color: rgba(0, 0, 0, .3);
+/* *************************** hover ******************************* */
+.menu_items li a i:hover,
+.menu_items a:hover, li.active {
+    background: #441faaf5;
+    /* background-color: rgba(0, 0, 0, .3); */
     transition: .4s;
 }
 
-.btn_menu{
-    margin-right: 30px;
-    font-size: 25px;
+.btn_menu {
+    margin-right: 3rem;
+    font-size: 2.5rem;
     color: #fff;
     cursor: pointer;
     display: none;
 }
 
-ul.show{
-    top: 65px;
+/* ****************** Animaciones y transisiones ****************** */
+ul.show {
+    top: 6.5rem;
 }
 
+/* ****************** Responsive Media ****************** */
+
 @media screen and (max-width: 952px) {
-    .logo{
-        font-size: 30px;
-        padding-left: 35px;
+    .logo {
+        height: 6.3rem;
+        padding-left: 3.5rem;
     }
 
-    .menu_items li a{
-        font-size: 16px;
+    .menu_items li a {
+        font-size: 1.6rem;
     }
 }
 
 @media screen and (max-width: 858px) {
-    .menu{
-        height: 65px;
+    .menu {
+        height: 6.5rem;
     }
 
-    .btn_menu{
+    .btn_menu {
         display: inline-flex;
     }
-    .menu_items{
+
+    .menu_items {
         position: fixed;
         width: 100vw;
-        height: calc(100% - 65px);
-        background: #414141;
+        height: calc(100% - 6.5rem);
+        background: #373B44;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #373B44, #3872cf);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #373B44, #3872cf);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
         top: -100vh;
         text-align: center;
         transition: all .4s;
         flex-direction: column;
     }
 
-    .menu_items li{
-        margin: 30px 0 0 0;
-        line-height: 30px;
+    .menu_items li {
+        margin: 3rem 0 0 0;
+        line-height: 6rem;
     }
- 
-    .menu_items li:hover{
+
+    .menu_items li:hover {
         background: none;
     }
 
-    .menu_items li a{
-        font-size: 20px;
+    .menu_items li a {
+        font-size: 2rem;
         color: #fff;
         font-weight: bold;
     }
 
-    .menu_items li a:hover{
-        color: #e9183b;
+    .menu_items li a:hover {
+        color: tomato;
     }
 
-    .logo{
-        font-size: 25px;
-        padding-left: 35px;
+    .logo {
+        height: 6.3rem;
+        padding-left: 3.5rem;
     }
 }
 
 @media screen and (max-width:858px) and (orientation: landscape) {
-    .menu_items li{
-        margin: 5px 0 0 0;
+    .menu_items li {
+        margin: .5rem 0 0 0;
     }
 
-    .menu_items{
+    .menu_items {
         overflow: scroll;
-        height:  calc(100% -65px);
+        height: calc(100% -6.5rem);
     }
 }
- 
+
+/* ------------------------- Fin del NAV MENU -------------------------------------- */
+/************************************************************************************/
