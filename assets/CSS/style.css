@@ -199,7 +199,7 @@ ul.show {
 .landin_launch{
     position: relative;
     width: 100%;
-    height: 30rem;
+    height: 50rem;
     background: url(/assets/IMG/Landing2.png);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -299,6 +299,70 @@ main {
     color: #32B6EF;
 }
 
+/* ------------------------- Mint2 -------------------------------------- */
+.Mint2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.Mint2 h1{
+    font-weight: 900;
+    font-size: 6rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+}
+
+/* Timer Contador  */
+.Mint2 .timer{
+    max-width: 55rem;
+    max-height: 56rem;
+    padding: 0rem;
+}
+
+.Mint2 .timer img {
+    width: 100%;
+}
+
+.Mint2 .timer .cont-temporizador {
+    display: flex;
+    position: absolute;
+    top: 27rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8rem;
+}
+
+.Mint2 .timer .cont-temporizador .bloque {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Mint2 .timer .cont-temporizador .bloque div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 5rem;
+    color: #32B6EF;
+}
+
+.Mint2 .timer .cont-temporizador .bloque p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #32B6EF;
+}
+
 /* Banner2 */
 .baner2 {
     width: 55%;
@@ -323,13 +387,87 @@ main {
 
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 769px){
+    .landin_launch{
+        height: 30rem;
+    }
+
+    .Mint2 h1{
+        font-size: 5rem;
+    }
+    
+    .Mint2 .timer{
+        max-width: 50rem;
+        max-height: 51rem;
+    }
+    
+    .Mint2 .timer .cont-temporizador {
+        top: 25rem;
+    }
+    
+    .Mint2 .timer .cont-temporizador .bloque {
+        padding-right: 1.5rem;
+    }
+    
+    .Mint2 .timer .cont-temporizador .bloque div {
+        font-size: 4rem;
+    }
+    
+    .Mint2 .timer .cont-temporizador .bloque p {
+        font-size: 1.8rem;
+    }
+    
     .baner1 h2 {
         font-size: 4.2rem;
     }
 }
 
+@media screen and (max-width: 469px){
+    .landin_launch{
+        height: 27rem;
+    }
 
+    .Mint2 h1{
+        font-size: 4rem;
+    }
+    
+    .Mint2 .timer{
+        max-width: 40rem;
+        max-height: 41rem;
+    }
+    
+    .Mint2 .timer .cont-temporizador {
+        top: 19rem;
+        margin-left: 5rem;
+    }
+    
+    .Mint2 .timer .cont-temporizador .bloque {
+        padding-right: 1rem;
+        padding-left: 2rem;
+
+    }
+    
+    .Mint2 .timer .cont-temporizador .bloque div {
+        font-size: 3.5rem;
+    }
+    
+    .Mint2 .timer .cont-temporizador .bloque p {
+        font-size: 1.5rem;
+    }
+
+    .baner2 {
+        width: 75%;
+    }
+    
+    .baner2 h2 {
+        font-size: 2.5rem;
+    }
+    
+    .baner2 p {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}
 
 /************************************************************************************/
 /* -------------------------- Rarity_Guide -------------------------*/
