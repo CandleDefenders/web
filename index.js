@@ -3,7 +3,7 @@ window.addEventListener("scroll", function(){
     navmenu.classList.toggle("sticky", this.window.scrollY > 0);
 });
 
-let dias = 20;
+let dias = 17;
 let horas = 0;
 let minutos = 0;
 let segundos = 0;
