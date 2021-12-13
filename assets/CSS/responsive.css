@@ -1,0 +1,143 @@
+/* XL Device :1200px. */
+@media (min-width: 1200px) and (max-width: 1449px) {
+
+    .hero-banner img {
+        max-width: 617px;
+      }
+      .hero-area {
+        padding-top: 144px;
+        padding-bottom: 50px;
+      }
+}
+
+/* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    .hero-banner img {
+        max-width: 512px;
+      }
+      .hero-area {
+        padding-top: 144px;
+        padding-bottom: 50px;
+      }
+      .single-rari {
+        margin-bottom: 50px;
+    }
+}
+
+ 
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .hero-banner img {
+        max-width: 407px;
+      }
+      .hero-area {
+        padding-top: 144px;
+        padding-bottom: 50px;
+      }
+
+      .single-rari {
+        margin-bottom: 50px;
+    }
+
+
+
+}
+ 
+
+/* SM Small Device :320px. */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+
+    .clock {
+        width: 100%;
+      }
+      .clock img {
+        width: 100%;
+      }
+      #countdown ul li span {
+        font-size: 34px;
+        line-height: 34px;
+      }
+      #countdown ul li {
+        font-size: 11px;
+        width: 55px;
+      }
+      #countdown {
+        left: -12px;
+      }
+
+
+
+      .heor-left {
+        display: none;
+      }
+      .heor-right {
+        display: none;
+      }
+      .heor-left.d-none {
+        display: block;
+      }
+      .heor-right.d-none {
+        display: block;
+      }
+      .hero-area {
+        background-image: none !important;
+      }
+      .hero-area:after {
+        position: absolute;
+        content: "";
+        background: url(../IMG/new/hero-bg-m.png);
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-size: cover;
+      }
+
+
+      .hero-imgs {
+        position: relative;
+        z-index: 9;
+      }
+      .hero-banner {
+        position: absolute;
+        bottom: 30%;
+      }
+      .hero-banner img {
+        max-width: 251px;
+      }
+      .hero-area {
+        padding-top: 93px;
+      }
+
+
+
+      .rari-img {
+        flex-wrap: wrap;
+      }
+      .rari-img a {
+        width: 50%;
+      }
+      .single-rari {
+        margin-bottom: 40px;
+      }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+/* SM Small Device :550px. */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+ 
+}

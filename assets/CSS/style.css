@@ -84,7 +84,8 @@ body {
 .menu_items li a i:hover,
 .menu_items a:hover,
 li.active {
-  background: #441faaf5;
+  /* background: #441faaf5; */
+  background-color: #32b6ef;
   /* background-color: rgba(0, 0, 0, .3); */
   transition: 0.4s;
 }
@@ -130,7 +131,6 @@ ul.show {
     height: calc(100% - 6.5rem);
     background: #373b44;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #3872cf, #373b44);
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #3872cf, #373b44);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -138,6 +138,7 @@ ul.show {
     text-align: center;
     transition: all 0.4s;
     flex-direction: column;
+    background: #020228;
   }
 
   .menu_items li {
@@ -158,7 +159,8 @@ ul.show {
 
   .menu_items li a i:hover,
   .menu_items li a:hover {
-    color: rgb(7, 206, 0);
+    /* color: rgb(7, 206, 0); */
+    color: #fff;
   }
 
   .logo {
@@ -186,13 +188,13 @@ ul.show {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url("/assets/IMG/banner\ Artboard\ 1.jpg");
+  background: url("../IMG/banner\ Artboard\ 1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .landin_lunch--secundaria {
-  background-image: url("/assets/IMG/Banners\ v2Artboard\ 3.jpg");
+  background-image: url("../IMG/Banners\ v2Artboard\ 3.jpg");
   background-size: cover;
   height: 41rem;
 }
@@ -271,7 +273,7 @@ main {
 .baner1 {
   height: 50rem;
   width: 100%;
-  background-image: url(/assets/IMG/codenumber2.png);
+  background-image: url(../IMG/codenumber2.png);
 }
 
 .baner1 h2 {
@@ -314,8 +316,8 @@ main {
 .Mint2 .timer-container {
   margin-top: 2rem;
 }
-.Mint2 .discore_mint--launch {
-  background: url("/assets/IMG/codenumber2.png");
+.discore_mint--launch {
+  background: url("../IMG/codenumber2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -325,7 +327,6 @@ main {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: 8.7rem;
 }
 
 .Mint2 .timer {
@@ -337,8 +338,7 @@ main {
 .Mint2 .timer img {
   width: 100%;
 }
-.Mint2 img:first-child {
-}
+
 .Mint2 .timer .cont-temporizador {
   display: flex;
   position: absolute;
@@ -413,7 +413,7 @@ main {
   }
 
   .Mint2 .timer .cont-temporizador {
-    top: 25rem;
+    top: 30rem;
   }
 
   .Mint2 .timer .cont-temporizador .bloque {
@@ -448,7 +448,7 @@ main {
   }
 
   .Mint2 .timer .cont-temporizador {
-    top: 19rem;
+    top: 30rem;
     margin-left: 5rem;
   }
 
@@ -509,6 +509,7 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  margin-bottom: 4.2rem;
 }
 
 .content-2 h3 {
@@ -630,7 +631,7 @@ main {
 .roadmap-header {
   height: 45rem;
   width: 100%;
-  background-image: url(/assets/IMG/codenumber2.png);
+  background-image: url(..//IMG/codenumber2.png);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -901,7 +902,7 @@ main {
 
 /*----------------------- banner-discord ----------------*/
 .banner-discord {
-  background: url(/assets/IMG/codenumber2.png);
+  background: url(../IMG/codenumber2.png);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1332,9 +1333,6 @@ main {
     font-size: 2rem;
   }
 
-  .Rarity_Guide {
-    padding: 0 5rem;
-  }
 
   .content-2 h3 {
     font-size: 2rem;
@@ -1560,12 +1558,12 @@ main {
   font-size: 3.6rem;
   line-height: 4.3rem;
   text-align: center;
-  color: #ffffff;
+  color: #32b6ef;
 }
 
 .discore_mint {
   padding: 10rem 0;
-  background: url("/assets/IMG/codenumber2.png");
+  background: url("../IMG/codenumber2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1599,7 +1597,7 @@ main {
 .roadmap-header {
   height: 45rem;
   width: 100%;
-  background-image: url(/assets/IMG/codenumber2.png);
+  background-image: url(../IMG/codenumber2.png);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1607,6 +1605,22 @@ main {
 }
 .headerimg {
   text-align: center;
+}
+.headerimg img {
+  margin-bottom: 7.9rem;
+}
+@media (max-width: 900px) {
+  .headerimg img {
+    max-width: 50%;
+  }
+}
+.headerimg--text {
+  font-size: 2.7rem;
+  line-height: 3.2rem;
+  text-align: center;
+  color: #32b6ef;
+  max-width: 80%;
+  margin: 0 auto 14.6rem auto;
 }
 /**************************************Whal*****************************/
 .whale {
@@ -1660,6 +1674,7 @@ main {
 .nav-mobile-social-media {
   display: none;
 }
+
 /*Media queries*/
 
 @media (min-width: 1200px) {
@@ -1670,15 +1685,20 @@ main {
     max-width: 80vw;
     margin: 0 auto;
   }
+  .Conteiner_box2:nth-child(3) .box_value:first-child{
+    height: 69rem;
+  }
+}
+@media (max-width: 1600px){
+  .Conteiner_box2:nth-child(3) .box_value:first-child{
+    height: 80rem;
+  }
 }
 @media (max-width: 1200px) {
   .Rarity_Guide .contet-1-parity img,
   .Rarity_Guide .contet-1-parity .content-2 {
     padding: 0 0 1.6rem 0;
     max-width: 100%;
-  }
-  .Rarity_Guide .contet-1-parity .content-2 {
-    margin: 0;
   }
   .container-rarity-guide .title-rarity {
     text-align: center;
@@ -1757,11 +1777,26 @@ main {
   .whale .img_whale img {
     max-width: 30%;
   }
+  .whale .whale_text{
+    padding-bottom: 5rem;
+  }
+  .discore_mint {
+    padding: 10rem 0;
+  }
+  .btn-1.btn-1-discord {
+    margin-top: 0;
+  }
+  .discore_mint--launch{
+    padding-top: 0;
+  }
   .landin_launch {
-    background-image: url("/assets/IMG/Banners\ v2Artboard\ 2\ 1.png");
+    background-image: url("../IMG/Banners/v2Artboard/2/1.png");
     height: 120rem;
     background-position: top;
     background-size: 100%;
+  }
+  .banner-text p{
+    width: 80%;
   }
   .baner1 {
     margin-bottom: 32px;
@@ -1829,3 +1864,269 @@ main {
     height: 100rem;
   }
 }
+
+/***********************Road map container **************/
+.roadmap-containe{
+  margin-bottom: 10rem;
+}
+
+
+
+/* hero-area-start */
+
+.hero-area {
+  width: 100%;
+  /*! height: 1107px; */
+  position: relative;
+  overflow: hidden;
+  background-size: 100% 100%;
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+.hero-imgs {
+  /*! position: absolute; */
+  /*! top: 200px; */
+  width: 100%;
+  /*! padding-bottom: 100px; */
+}
+.hero-img-fl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*! padding: 0 72px; */
+}
+.hero-bg {
+  width: 100%;
+}
+.hero-img-fl img {
+  width: 46%;
+}
+.hero-banner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-banner img {
+  width: 100%;
+  margin-top: -6px !important;
+  margin: auto;
+  max-width: 1000px;
+  margin: auto;
+  animation: myAnim3 4s ease 0s 1 normal forwards;
+}
+/* hero-area-end */
+
+
+
+/* timer-area-start */
+
+
+
+#countdown ul li {
+  color: #32B6EF;
+  font-size: 18px;
+  font-weight: 400;
+  display: inline-block;
+  text-align: center;
+  margin: 0 0;
+  width: 123px;
+  text-transform: uppercase;
+}
+#countdown ul li span {
+  font-size: 72px;
+  font-weight: 700;
+  display: block;
+  line-height: 65px;
+}
+
+
+.clock {
+  position: relative;
+}
+#countdown {
+  position: absolute;
+  left: -30px;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  top: 55%;
+  transform: translateY(-50%);
+}
+.heor-left {
+	animation: myAnim 2s ease 0s 1 normal forwards;
+}.heor-right {
+	animation: myAnim2 2s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateX(-100%);
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateX(-26px);
+  }
+
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateX(-13px);
+  }
+
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateX(-6.5px);
+  }
+
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateX(-4px);
+  }
+
+  25%,
+  55%,
+  75%,
+  87%,
+  98% {
+    animation-timing-function: ease-out;
+    transform: translateX(0px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+
+
+@keyframes myAnim2 {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateX(100%);
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateX(26px);
+  }
+
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateX(13px);
+  }
+
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateX(6.5px);
+  }
+
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateX(4px);
+  }
+
+  25%,
+  55%,
+  75%,
+  87%,
+  98% {
+    animation-timing-function: ease-out;
+    transform: translateX(0px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes myAnim3 {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}
+.menu_items li a img {
+	max-width: 27px;
+}.d-none {
+  display: none;
+}
+
+
+
+.rari-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rari-img a {
+  width: 16.67%;
+  height: 276px;
+}
+.rari-img a {
+  height: 100%;
+}
+.rari-boot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(252,253,253);
+  background: -moz-linear-gradient(left, rgba(252,253,253,1) 0%, rgba(31,166,97,1) 100%);
+  background: -webkit-linear-gradient(left, rgba(252,253,253,1) 0%,rgba(31,166,97,1) 100%);
+  background: linear-gradient(to right, rgba(252,253,253,1) 0%,rgba(31,166,97,1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fcfdfd', endColorstr='#1fa661',GradientType=1 );
+  max-width: 99%;
+  margin-left: auto;
+  padding: 0 29px;
+}
+.rari-boot span {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 900;
+}
+.rari-boot.boot2 {
+  max-width: 100%;
+  background: rgb(252,253,253);
+  background: -moz-linear-gradient(left, rgba(252,253,253,1) 0%, rgba(184,12,13,1) 100%);
+  background: -webkit-linear-gradient(left, rgba(252,253,253,1) 0%,rgba(184,12,13,1) 100%);
+  background: linear-gradient(to right, rgba(252,253,253,1) 0%,rgba(184,12,13,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfdfd', endColorstr='#b80c0d',GradientType=1 );
+}
+/* timer-area-end */
