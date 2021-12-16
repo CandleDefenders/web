@@ -23,6 +23,46 @@
       .single-rari {
         margin-bottom: 50px;
     }
+
+
+
+    .roadmap-item {
+      margin-bottom: 100px !important;
+    }
+    .roadmap-item {
+      padding: 0;
+      align-items: start;
+      margin: 0 !important;
+    }
+    .Container-box3 p {
+      font-size: 21px;
+    }
+    .Container-box3 h5 {
+      font-size: 27px;
+      margin-top: 20px;
+    }
+    .Container-box3 img {
+      max-width: 100px;
+      height: 100px;
+    }
+    .btn-discord h6 {
+      font-size: 29px;
+    }
+    .btn-discord {
+      height: 70px;
+      border-radius: 10px;
+      padding: 0 34px;
+      width: 416px;
+    }
+    .btn-discord img {
+      max-width: 50px;
+    }
+
+
+
+
+
+
 }
 
  
@@ -40,7 +80,38 @@
       .single-rari {
         margin-bottom: 50px;
     }
-
+    .roadmap-item {
+      margin-bottom: 100px !important;
+    }
+    .roadmap-item {
+      padding: 0;
+      align-items: start;
+      margin: 0 !important;
+      margin-bottom: 49px !important;
+    }
+    .Container-box3 p {
+      font-size: 21px;
+    }
+    .Container-box3 h5 {
+      font-size: 27px;
+      margin-top: 20px;
+    }
+    .Container-box3 img {
+      width: 100px;
+      height: 100px;
+    }
+    .btn-discord h6 {
+      font-size: 29px;
+    }
+    .btn-discord {
+      height: 70px;
+      border-radius: 10px;
+      padding: 0 34px;
+      width: 416px;
+    }
+    .btn-discord img {
+      max-width: 50px;
+    }
 
 
 }
@@ -124,11 +195,104 @@
         margin-bottom: 40px;
       }
 
+      .roadmap-item {
+        margin-bottom: 100px !important;
+      }
+      .roadmap-item {
+        padding: 0;
+        align-items: start;
+        margin: 0 !important;
+        margin-bottom: 49px !important;
+        height: auto;
+      }
+      .Container-box3 p {
+        font-size: 21px;
+      }
+      .Container-box3 h5 {
+        font-size: 27px;
+        margin-top: 20px;
+      }
+      .Container-box3 img {
+        width: 100px;
+        height: 100px;
+      }
+      .btn-discord h6 {
+        font-size: 17px;
+      }
+      .btn-discord {
+        height: 49px;
+        border-radius: 10px;
+        padding: 0 22px;
+        width: 91%;
+      }
+      .btn-discord img {
+        max-width: 30px;
+      }
+  
+.box_title {
+  padding-left: 13px;
+}
+.banner-discord {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 300px;
+}
+.Conteiner_box2 {
+	width: 92%;
+	display: flex;
+	height: 100%;
+	/* margin-bottom: 2rem; */
+	margin: 2rem auto;
+}
 
-
-
-
-
+.landin_launch {
+	height: auto;
+	margin-top: 86px;
+}
+.Conteiner_box2 {
+	width: 94%;
+	display: flex;
+	height: 100%;
+	/* margin-bottom: 2rem; */
+	margin: 2rem auto;
+}
+    
+  .landin_launch {
+	height: auto;
+	background-size: 100%;
+	margin-top: 150px;
+}  
+ .container-box1.container-box1-defenders.defrnt--pad {
+	padding-top: 0;
+}   
+    
+ .container-rarity-guide .Rarity_Guide {
+	margin-top: 40px;
+}   
+ .title-faqs {
+	width: 91%;
+	text-align: center;
+	margin: 0 auto;
+}   
+ .text.text__mar {
+	margin-top: 0 !important;
+	max-width: 100%;
+	margin: auto;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 }
 
